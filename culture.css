@@ -1,0 +1,1609 @@
+
+.page-template-page-culture {
+    background-color: #e7e8e8
+}
+
+.culture-wrapper {
+    width: 100%;
+    height: 800vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden
+}
+
+.culture-bg {
+    background-color: #e7e8e8;
+    background-image: url(../img/culture-bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 650%;
+    z-index: 1;
+    transform: scale(1.2);
+    -webkit-transform-origin: 0 0
+}
+
+.culture-bg:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/texture.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    filter: alpha(opacity=70);
+    opacity: .7
+}
+
+.culture-sec {
+    width: 100%;
+    display: block;
+    position: relative;
+    background: 0 0;
+    z-index: 2
+}
+
+.culture-sec .content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    text-align: center;
+    z-index: 99;
+    transform-style: preserve-3d
+}
+
+@media (min-width: 768px) {
+    .culture-sec .content {
+        z-index:5
+    }
+}
+
+.culture-sec .content>.container-fluid {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.culture-sec .content h1 {
+    margin: 0
+}
+
+.culture-sec .content h2 {
+    margin: 0
+}
+
+@media (min-width: 1200px) {
+    .culture-sec .content h2.xl {
+        font-size:40px;
+        line-height: 40px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec .content h2.xl {
+        font-size:60px;
+        line-height: 60px
+    }
+}
+
+.culture-sec .content .show-1,.culture-sec .content .show-2,.culture-sec .content .show-3 {
+    transition: all .4s ease
+}
+
+@media (min-width: 768px) {
+    .culture-sec .content .show-1,.culture-sec .content .show-2,.culture-sec .content .show-3 {
+        filter:alpha(opacity=0);
+        opacity: 0;
+        transform: translateY(-50%) rotateX(90deg);
+    }
+}
+
+.culture-sec .content.arrive .show-1,.culture-sec .content.arrive .show-2,.culture-sec .content.arrive .show-3 {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.culture-sec .content.arrive .show-2 {
+    transition: all .4s ease .4s
+}
+
+.culture-sec .content.arrive .show-3 {
+    transition: all .4s ease .8s
+}
+
+.culture-sec .t1,.culture-sec .t2,.culture-sec .t3 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    z-index: 9;
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.culture-sec .t1 {
+    top: 25%
+}
+
+.culture-sec .t3 {
+    top: 75%
+}
+
+.culture-sec:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    z-index: 9;
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.culture-sec.sec-01 {
+    height: 100vh
+}
+
+.culture-sec.sec-01 .t2 {
+    top: 51%
+}
+
+.culture-sec.sec-01 .three-guys {
+    display: block;
+    position: absolute;
+    width: 180%;
+    height: 100%;
+    top: 32%;
+    left: -40%;
+    background: url(../img/sec-1-guys-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 6
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-01 .three-guys {
+        width:100%;
+        left: 0;
+        top: 45%
+    }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+    .culture-sec.sec-01 .three-guys {
+        top:50%;
+        background-size: contain;
+        background-position: center top
+    }
+}
+
+.culture-sec.sec-01 .guys-splash-1 {
+    display: block;
+    position: absolute;
+    width: 1178px;
+    height: 570px;
+    top: 50%;
+    right: -10%;
+    background: url(../img/sec-1-guys-splash-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1
+}
+
+.culture-sec.sec-01 .splash-1 {
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 508px;
+    top: -300px;
+    right: -200px;
+    background: url(../img/sec-1-splash-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-01 .splash-1 {
+        width:900px;
+        height: 1016px;
+        top: -600px;
+        right: -400px
+    }
+}
+
+.culture-sec.sec-01 .splash-2 {
+    display: block;
+    position: absolute;
+    width: 633px;
+    height: 666px;
+    top: 50%;
+    left: 0;
+    background: url(../img/sec-1-splash-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7
+}
+
+.culture-sec.sec-01 .snow-1 {
+    display: block;
+    position: absolute;
+    width: 946px;
+    height: 766px;
+    top: -350px;
+    left: -300px;
+    background: url(../img/sec-1-snow-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2
+}
+
+.culture-sec.sec-01 .snow-2 {
+    display: block;
+    position: absolute;
+    width: 628px;
+    height: 655px;
+    top: -200px;
+    left: 50%;
+    background: url(../img/sec-1-snow-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2
+}
+
+.culture-sec.sec-01 .cloud-1 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 20%;
+    left: -700px;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-01 .cloud-2 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 50%;
+    right: -700px;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-01 .cloud-3 {
+    display: block;
+    position: absolute;
+    width: 532px;
+    height: 251px;
+    top: 0;
+    left: 50%;
+    background: url(../img/sec-1-cloud-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7
+}
+
+.culture-sec.sec-01 .snowboarder {
+    display: block;
+    position: absolute;
+    width: 375px;
+    height: 190px;
+    top: 90%;
+    left: 0;
+    background: url(../img/sec-1-snowboarder-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-01 .snowboarder {
+        width:757px;
+        height: 389px;
+        top: 80%;
+        left: -20%
+    }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+    .culture-sec.sec-01 .snowboarder {
+        left:-20%
+    }
+}
+
+.culture-sec.sec-02 {
+    height: 50vh
+}
+
+.culture-sec.sec-02 .topo {
+    display: block;
+    position: absolute;
+    width: 1020px;
+    height: 738px;
+    top: -30%;
+    right: 0;
+    background: url(../img/sec-1-topo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(800px,400px) scale(1.5)
+}
+
+.culture-sec.sec-02 .cloud {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 30%;
+    right: -20%;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7;
+    transform: translate(1000px,400px)
+}
+
+.culture-sec.sec-03 {
+    height: 100vh
+}
+
+.culture-sec.sec-03 .topo {
+    display: block;
+    position: absolute;
+    width: 1184px;
+    height: 792px;
+    top: 5%;
+    right: 0;
+    background: url(../img/sec-3-topo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    transform: translate(-200px,200px)
+}
+
+.culture-sec.sec-03 .guys-1 {
+    display: block;
+    position: absolute;
+    width: 884px;
+    height: 650px;
+    top: 35%;
+    right: -360px;
+    background: url(../img/sec-3-guys-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    transform: translate(-200px,400px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-03 .guys-1 {
+        width:984px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-03 .guys-1 {
+        width:1084px
+    }
+}
+
+.culture-sec.sec-03 .guys-2 {
+    display: block;
+    position: absolute;
+    width: 475px;
+    height: 418px;
+    top: 55%;
+    left: -50px;
+    background: url(../img/sec-3-guys-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    transform: translate(-300px,500px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-03 .guys-2 {
+        top:45%;
+        left: 0
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-03 .guys-2 {
+        width:575px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-03 .guys-2 {
+        width:675px
+    }
+}
+
+.culture-sec.sec-03 .guys-3 {
+    display: block;
+    position: absolute;
+    width: 470px;
+    height: 986px;
+    top: -70%;
+    right: -150px;
+    background: url(../img/sec-3-guys-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(200px,500px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-03 .guys-3 {
+        height:1186px;
+        top: -40%
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-03 .guys-3 {
+        width:570px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-03 .guys-3 {
+        width:670px
+    }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+    .culture-sec.sec-03 .guys-3 {
+        right:-230px
+    }
+}
+
+.culture-sec.sec-03 .hop-1 {
+    display: block;
+    position: absolute;
+    width: 813px;
+    height: 1029px;
+    top: -10%;
+    left: -150px;
+    background: url(../img/sec-3-hop-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    transform: translate(-900px,-400px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-03 .hop-1 {
+        width:913px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-03 .hop-1 {
+        width:1013px
+    }
+}
+
+.culture-sec.sec-03 .splash-1 {
+    display: block;
+    position: absolute;
+    width: 799px;
+    height: 1007px;
+    top: 15%;
+    left: -10%;
+    background: url(../img/sec-3-splash-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(-400px,800px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-03 .splash-1 {
+        width:899px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-03 .splash-1 {
+        width:999px
+    }
+}
+
+.culture-sec.sec-03 .splash-2 {
+    display: block;
+    position: absolute;
+    width: 415px;
+    height: 910px;
+    top: 15%;
+    right: -10%;
+    background: url(../img/sec-3-splash-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 4;
+    transform: translate(0,800px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-03 .splash-2 {
+        width:515px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-03 .splash-2 {
+        width:615px
+    }
+}
+
+.culture-sec.sec-03 .cloud-1 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 30%;
+    left: -50%;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-03 .cloud-2 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 50%;
+    right: -700px;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-04 {
+    height: 100vh
+}
+
+.culture-sec.sec-04 .ocean {
+    display: block;
+    position: absolute;
+    width: 1482px;
+    height: 969px;
+    top: -15%;
+    left: 0;
+    background: url(../img/sec-4-ocean-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 2;
+    transform: translate(200px,400px)
+}
+
+.culture-sec.sec-04 .cloud-1 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 60%;
+    left: 0;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-04 .cloud-2 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 50%;
+    right: -700px;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-04 .guys-1 {
+    display: block;
+    position: absolute;
+    width: 323px;
+    height: 724px;
+    top: 25%;
+    left: -70px;
+    background: url(../img/sec-4-guy-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    transform: translate(-200px,400px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-04 .guys-1 {
+        width:363px;
+        top: 35%;
+        left: 0
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-04 .guys-1 {
+        width:463px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-04 .guys-1 {
+        width:563px
+    }
+}
+
+.culture-sec.sec-04 .guys-2 {
+    display: block;
+    position: absolute;
+    width: 1037px;
+    height: 1001px;
+    top: 35%;
+    right: -560px;
+    background: url(../img/sec-4-guy-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    transform: translate(300px,500px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-04 .guys-2 {
+        width:1137px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-04 .guys-2 {
+        width:1237px
+    }
+}
+
+.culture-sec.sec-04 .guys-3 {
+    display: block;
+    position: absolute;
+    width: 1031px;
+    height: 620px;
+    top: -5%;
+    left: -50px;
+    background: url(../img/sec-4-guy-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(400px,200px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-04 .guys-3 {
+        top:15%;
+        left: 0
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-04 .guys-3 {
+        width:1131px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-04 .guys-3 {
+        width:1231px
+    }
+}
+
+.culture-sec.sec-05 {
+    height: 100vh
+}
+
+.culture-sec.sec-05 .topo-1 {
+    display: block;
+    position: absolute;
+    width: 1184px;
+    height: 792px;
+    top: -40%;
+    right: -10%;
+    background: url(../img/sec-3-topo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(300px,400px)
+}
+
+.culture-sec.sec-05 .topo-2 {
+    display: block;
+    position: absolute;
+    width: 1184px;
+    height: 792px;
+    top: 15%;
+    left: 10%;
+    background: url(../img/sec-3-topo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(300px,400px)
+}
+
+.culture-sec.sec-05 .cloud-1 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 10%;
+    left: 30%;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-05 .cloud-2 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 50%;
+    right: -700px;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-05 .skater {
+    display: block;
+    position: absolute;
+    width: 325px;
+    height: 173px;
+    top: 20%;
+    left: 10%;
+    background: url(../img/sec-5-skater-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(-500px,-200px) rotate(-15deg)
+}
+
+.culture-sec.sec-05 .biker-1 {
+    display: block;
+    position: absolute;
+    width: 247px;
+    height: 273px;
+    top: 75%;
+    left: 15%;
+    background: url(../img/sec-5-biker-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(500px,200px) rotate(-170deg)
+}
+
+.culture-sec.sec-05 .biker-2 {
+    display: block;
+    position: absolute;
+    width: 587px;
+    height: 664px;
+    top: 25%;
+    right: 10%;
+    background: url(../img/sec-5-biker-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 6;
+    transform: translate(-400px,500px) rotate(15deg)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-05 .biker-2 {
+        width:787px
+    }
+}
+
+.culture-sec.sec-05 .tube {
+    display: block;
+    position: absolute;
+    width: 725px;
+    height: 856px;
+    top: 5%;
+    right: -50px;
+    background: url(../img/sec-5-tube-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 4;
+    transform: translate(300px,600px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-05 .tube {
+        width:925px
+    }
+}
+
+.culture-sec.sec-05 .ski {
+    display: block;
+    position: absolute;
+    width: 270px;
+    height: 250px;
+    top: 2%;
+    left: 25%;
+    background: url(../img/sec-5-ski-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(700px,200px) rotate(-35deg)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-05 .ski {
+        width:375px;
+        height: 318px;
+        top: -5%;
+        left: 50%
+    }
+}
+
+.culture-sec.sec-05 .climb {
+    display: block;
+    position: absolute;
+    width: 803px;
+    height: 846px;
+    top: 5%;
+    left: -95%;
+    background: url(../img/sec-5-climb-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    transform: translate(400px,500px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-05 .climb {
+        left:5%
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-05 .climb {
+        width:1003px
+    }
+}
+
+.culture-sec.sec-06 {
+    height: 50vh
+}
+
+.culture-sec.sec-06 .topo-1 {
+    display: block;
+    position: absolute;
+    width: 1184px;
+    height: 792px;
+    top: -5%;
+    left: 10%;
+    background: url(../img/sec-3-topo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(400px,400px)
+}
+
+.culture-sec.sec-06 .cloud-1 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 60%;
+    left: -20%;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-06 .cloud-2 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 70%;
+    right: 20%;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 3
+}
+
+.culture-sec.sec-07 {
+    height: 100vh
+}
+
+.culture-sec.sec-07 .forest-1 {
+    display: block;
+    position: absolute;
+    width: 760px;
+    height: 540px;
+    top: -40%;
+    right: 0;
+    background: url(../img/sec-6-forest-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(400px,400px)
+}
+
+.culture-sec.sec-07 .cloud {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 40%;
+    right: -20%;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 3;
+    transform: translate(300px,100px)
+}
+
+.culture-sec.sec-07 .ocean {
+    display: block;
+    position: absolute;
+    width: 1482px;
+    height: 969px;
+    top: 20%;
+    left: 0;
+    background: url(../img/sec-4-ocean-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    z-index: 1;
+    transform: translate(200px,400px)
+}
+
+.culture-sec.sec-07 .guys-1 {
+    display: block;
+    position: absolute;
+    width: 1141px;
+    height: 900px;
+    top: 25%;
+    left: -520px;
+    background: url(../img/sec-7-guy-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    transform: translate(-400px,400px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-07 .guys-1 {
+        width:1241px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-07 .guys-1 {
+        width:1341px
+    }
+}
+
+.culture-sec.sec-07 .guys-2 {
+    display: block;
+    position: absolute;
+    width: 937px;
+    height: 737px;
+    top: 37%;
+    right: -300px;
+    background: url(../img/sec-7-guy-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    transform: translate(300px,800px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-07 .guys-2 {
+        width:1037px;
+        height: 937px;
+        top: 25%
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-07 .guys-2 {
+        width:1137px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-07 .guys-2 {
+        width:1237px
+    }
+}
+
+.culture-sec.sec-07 .splash-1 {
+    display: block;
+    position: absolute;
+    width: 906px;
+    height: 900px;
+    top: 25%;
+    left: 70px;
+    background: url(../img/sec-7-splash-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-07 .splash-1 {
+        width:1006px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-07 .splash-1 {
+        width:1106px
+    }
+}
+
+.culture-sec.sec-07 .bike-1 {
+    display: block;
+    position: absolute;
+    width: 736px;
+    height: 1153px;
+    top: -25%;
+    right: -100px;
+    background: url(../img/sec-7-bike-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    transform: translate(400px,400px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-07 .bike-1 {
+        width:836px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-07 .bike-1 {
+        width:936px
+    }
+}
+
+.culture-sec.sec-07 .tube-1 {
+    display: block;
+    position: absolute;
+    width: 1159px;
+    height: 530px;
+    top: -20%;
+    left: -350px;
+    background: url(../img/sec-7-tube-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(-800px,100px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-07 .tube-1 {
+        top:-2%
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-07 .tube-1 {
+        width:1259px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-07 .tube-1 {
+        width:1359px
+    }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+    .culture-sec.sec-07 .tube-1 {
+        left:-200px
+    }
+}
+
+.culture-sec.sec-07 .snowboarder-1 {
+    display: block;
+    position: absolute;
+    width: 633px;
+    height: 624px;
+    top: -15%;
+    right: 0;
+    background: url(../img/sec-7-snowboarder-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 4;
+    transform: translate(600px,-200px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-07 .snowboarder-1 {
+        width:833px
+    }
+}
+
+.culture-sec.sec-08 {
+    height: 100vh
+}
+
+.culture-sec.sec-08 .topo-1 {
+    display: block;
+    position: absolute;
+    width: 1184px;
+    height: 792px;
+    top: 60%;
+    right: -10%;
+    background: url(../img/sec-3-topo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(-300px,400px)
+}
+
+.culture-sec.sec-08 .topo-2 {
+    display: block;
+    position: absolute;
+    width: 1184px;
+    height: 792px;
+    top: 0;
+    left: 10%;
+    background: url(../img/sec-3-topo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(-300px,400px)
+}
+
+.culture-sec.sec-08 .cloud-1 {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 30%;
+    left: 30%;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 7
+}
+
+.culture-sec.sec-08 .splash-1 {
+    display: block;
+    position: absolute;
+    width: 700px;
+    height: 830px;
+    top: 5%;
+    left: 70px;
+    background: url(../img/sec-8-splash-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(-300px,500px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-08 .splash-1 {
+        width:800px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-08 .splash-1 {
+        width:900px
+    }
+}
+
+.culture-sec.sec-08 .splash-2 {
+    display: block;
+    position: absolute;
+    width: 1394px;
+    height: 982px;
+    top: 5%;
+    right: 0;
+    background: url(../img/sec-8-splash-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    transform: translate(-400px,800px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-08 .splash-2 {
+        width:1494px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-08 .splash-2 {
+        width:1594px
+    }
+}
+
+.culture-sec.sec-08 .snowboarder-1 {
+    display: block;
+    position: absolute;
+    width: 289px;
+    height: 389px;
+    top: 0;
+    left: -30%;
+    background: url(../img/sec-7-snowboarder-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 4;
+    transform: translate(-600px,200px) rotate(-45deg)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-08 .snowboarder-1 {
+        top:-10%;
+        left: 100px
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-08 .snowboarder-1 {
+        width:489px
+    }
+}
+
+.culture-sec.sec-08 .guys-1 {
+    display: block;
+    position: absolute;
+    width: 607px;
+    height: 629px;
+    top: 35%;
+    left: -5%;
+    background: url(../img/sec-8-guy-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 6;
+    transform: translate(-400px,800px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-08 .guys-1 {
+        width:707px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-08 .guys-1 {
+        left:80px;
+        width: 807px
+    }
+}
+
+.culture-sec.sec-08 .guys-2 {
+    display: block;
+    position: absolute;
+    width: 668px;
+    height: 682px;
+    top: 52%;
+    right: -300px;
+    background: url(../img/sec-8-guy-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    transform: translate(-400px,800px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-08 .guys-2 {
+        right:-150px
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-08 .guys-2 {
+        width:768px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-08 .guys-2 {
+        width:868px
+    }
+}
+
+.culture-sec.sec-09 {
+    height: 100vh
+}
+
+.culture-sec.sec-09 .cloud {
+    display: block;
+    position: absolute;
+    width: 1043px;
+    height: 306px;
+    top: 40%;
+    right: -20%;
+    background: url(../img/sec-1-cloud-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 3;
+    transform: translate(-300px,100px)
+}
+
+.culture-sec.sec-09 .topo {
+    display: block;
+    position: absolute;
+    width: 1184px;
+    height: 792px;
+    top: -20%;
+    right: -10%;
+    background: url(../img/sec-3-topo-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    transform: translate(-300px,400px)
+}
+
+.culture-sec.sec-09 .ocean {
+    display: block;
+    position: absolute;
+    width: 1482px;
+    height: 969px;
+    top: 20%;
+    left: 0;
+    background: url(../img/sec-4-ocean-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    z-index: 1;
+    transform: translate(200px,400px)
+}
+
+.culture-sec.sec-09 .guys-1 {
+    display: block;
+    position: absolute;
+    width: 715px;
+    height: 959px;
+    top: 35%;
+    left: 0;
+    background: url(../img/sec-9-guy-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 6;
+    transform: translate(-200px,800px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-09 .guys-1 {
+        width:815px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-09 .guys-1 {
+        width:915px
+    }
+}
+
+.culture-sec.sec-09 .guys-2 {
+    display: block;
+    position: absolute;
+    width: 508px;
+    height: 502px;
+    top: 45%;
+    left: -100px;
+    background: url(../img/sec-9-guy-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 7;
+    transform: translate(-600px,200px)
+}
+
+@media (min-width: 768px) {
+    .culture-sec.sec-09 .guys-2 {
+        width:658px;
+        height: 622px;
+        left: -200px
+    }
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-09 .guys-2 {
+        width:758px;
+        right: 0;
+        left: inherit
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-09 .guys-2 {
+        width:858px
+    }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+    .culture-sec.sec-09 .guys-2 {
+        top:25%;
+        left: -160px
+    }
+}
+
+.culture-sec.sec-09 .guys-3 {
+    display: block;
+    position: absolute;
+    width: 1131px;
+    height: 932px;
+    top: -15%;
+    left: -250px;
+    background: url(../img/sec-9-guy-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    transform: translate(-200px,800px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-09 .guys-3 {
+        width:1231px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-09 .guys-3 {
+        width:1331px
+    }
+}
+
+.culture-sec.sec-09 .splash-1 {
+    display: block;
+    position: absolute;
+    width: 783px;
+    height: 733px;
+    top: 10%;
+    right: 0;
+    background: url(../img/sec-9-splash-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    transform: translate(-200px,800px)
+}
+
+@media (min-width: 1200px) {
+    .culture-sec.sec-09 .splash-1 {
+        width:983px
+    }
+}
+
+@media (min-width: 1420px) {
+    .culture-sec.sec-09 .splash-1 {
+        width:1083px
+    }
+}
