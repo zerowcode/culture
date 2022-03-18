@@ -1164,6 +1164,5 @@ $(function() {
           .addTo(controller);
       });
     }
-  }
 });
  
