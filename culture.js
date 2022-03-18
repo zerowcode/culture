@@ -1,5 +1,4 @@
-var page = function (app, options) {
-  function init() {
+$(function() {
     setTimeout(function () {
       $(".sec-01 .content").addClass("arrive");
     }, 500);
@@ -1166,10 +1165,5 @@ var page = function (app, options) {
       });
     }
   }
-  init();
-  return {
-    init: function () {
-      init();
-    },
-  };
-};
+});
+ 
